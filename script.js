@@ -21,11 +21,13 @@ VERSION:3.0
 FN:${name}
 TITLE:${title}
 EMAIL:${email}
+TEL:${phone}
 URL:${website}
 END:VCARD`;
 
-    // 使用qrcode库生成二维码
-    QRCode.toCanvas(document.getElementById('qrcode'), vCard, function (error) {
+    // 3. 使用 QRCode 库将 vCard 转换为二维码
+    const qrcodeElement = document.getElementById('qrcode');
+    QRCode.toCanvas(qrcodeElement, vCard, function (error) {
         if (error) {
             console.error('生成二维码时出错:', error);
             alert('生成二维码时出错，请稍后再试。');
