@@ -95,5 +95,5 @@ END:VCARD`;
             }
         });
     };
-    img.src = window.resizedBackgroundImage || 'path/to/default/background.jpg';  // 使用调整大小后的图片或默认图片
+    img.src = window.resizedBackgroundImage || 'images/background.png';  // 使用调整大小后的图片或默认图片
 });
