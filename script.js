@@ -26,6 +26,7 @@ document.getElementById('business-card-form').addEventListener('submit', functio
     END:VCARD`;
 
     // 使用qrcode庫生成二維碼
+    var QRCode = require('qrcode')
     QRCode.toCanvas(document.getElementById('qrcode'), vCard, function (error) {
         if (error) console.error(error);
         console.log('二維碼生成完成!');
