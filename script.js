@@ -27,7 +27,14 @@ END:VCARD`;
 
     // 3. 使用 QRCode 库将 vCard 转换为二维码
     const qrcodeElement = document.getElementById('qrcode');
-    QRCode.toCanvas(qrcodeElement, vCard, function (error) {
+    QRCode.toCanvas(qrcodeElement, vCard, {
+        width: 200,  // 设置宽度
+        margin: 2,   // 设置边距
+        color: {
+            dark: '#000000',  // 二维码颜色
+            light: '#ffffff'  // 背景颜色
+        }
+    }, function (error) {
         if (error) {
             console.error('生成二维码时出错:', error);
             alert('生成二维码时出错，请稍后再试。');
