@@ -58,15 +58,12 @@ button:hover {
     text-align: center;
 }
 
-.qrcode-centered {
+.qrcode-centered canvas {
+    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-.qrcode-centered canvas {
-    display: block;
 }
 
 #download-container {
