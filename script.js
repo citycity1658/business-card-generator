@@ -7,6 +7,12 @@ document.getElementById('business-card-form').addEventListener('submit', functio
     const email = String(document.getElementById('email').value);
     const phone = String(document.getElementById('phone').value);
     const website = String(document.getElementById('website').value);
+        // 更新名片預覽
+        document.getElementById('preview-name').textContent = name;
+        document.getElementById('preview-title').textContent = title;
+        document.getElementById('preview-email').textContent = email;
+        document.getElementById('preview-phone').textContent = phone;
+        document.getElementById('preview-website').textContent = website;
 
     // 创建 vCard 字符串
     const vCard = `BEGIN:VCARD
