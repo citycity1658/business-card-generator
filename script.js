@@ -21,7 +21,6 @@ VERSION:3.0
 FN:${name}
 TITLE:${title}
 EMAIL:${email}
-TEL:${phone}
 URL:${website}
 END:VCARD`;
 
