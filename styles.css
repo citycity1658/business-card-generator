@@ -44,11 +44,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-#qrcode {
-    margin-top: 20px;
-    text-align: center;
-}
-
 #card-preview {
     margin-top: 20px;
     background-color: #fafafa;
@@ -64,6 +59,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    text-align: center;
 }
 
 #download-container {
