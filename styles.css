@@ -62,9 +62,28 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* 可以根据需要调整上边距 */
+    margin-top: 20px;
 }
 
 .qrcode-centered canvas {
-    display: block; /* 确保 canvas 元素不会有额外的底部空间 */
+    display: block;
+}
+
+#download-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
 }

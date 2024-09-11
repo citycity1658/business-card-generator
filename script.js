@@ -24,8 +24,13 @@ TEL:${phone}
 URL:${website}
 END:VCARD`;
 
-    // 生成二维码
+    // 清除之前的二维码和下载按钮
     const qrcodeElement = document.getElementById('qrcode');
+    qrcodeElement.innerHTML = '';
+    const downloadContainer = document.getElementById('download-container');
+    downloadContainer.innerHTML = '';
+
+    // 生成二维码
     QRCode.toCanvas(qrcodeElement, vCard, {
         width: 200,
         margin: 4
@@ -35,6 +40,15 @@ END:VCARD`;
             alert('生成二维码时出错，请稍后再试。');
         } else {
             console.log('二维码生成完成!');
+            qrcodeElement.classList.add('qrcode-centered');
+
+            // 创建下载按钮
+            const downloadBtn = document.createElement('a');
+            downloadBtn.textContent = '下载二维码';
+            downloadBtn.classList.add('download-btn');
+            downloadBtn.href = qrcodeElement.toDataURL('image/png');
+            downloadBtn.download = 'qrcode.png';
+            downloadContainer.appendChild(downloadBtn);
         }
     });
 });
