@@ -40,7 +40,6 @@ END:VCARD`;
             alert('生成二维码时出错，请稍后再试。');
         } else {
             console.log('二维码生成完成!');
-            qrcodeElement.classList.add('qrcode-centered');
 
             // 创建下载按钮
             const downloadBtn = document.createElement('a');
