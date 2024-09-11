@@ -1,5 +1,3 @@
-import QRCode from 'qrcode';
-
 document.getElementById('business-card-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -27,9 +25,13 @@ document.getElementById('business-card-form').addEventListener('submit', functio
     URL:${website}
     END:VCARD`;
 
-    // 使用qrcode庫生成二維碼
+    // 使用qrcode库生成二维码
     QRCode.toCanvas(document.getElementById('qrcode'), vCard, function (error) {
-        if (error) console.error(error);
-        console.log('二維碼生成完成!');
+        if (error) {
+            console.error('生成二维码时出错:', error);
+            alert('生成二维码时出错，请稍后再试。');
+        } else {
+            console.log('二维码生成完成!');
+        }
     });
 });
