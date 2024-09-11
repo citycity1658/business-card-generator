@@ -57,3 +57,14 @@ button:hover {
     border-radius: 5px;
     text-align: center;
 }
+
+.qrcode-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* 可以根据需要调整上边距 */
+}
+
+.qrcode-centered canvas {
+    display: block; /* 确保 canvas 元素不会有额外的底部空间 */
+}
