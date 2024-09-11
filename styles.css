@@ -58,7 +58,7 @@ button:hover {
     text-align: center;
 }
 
-.qrcode-centered canvas {
+#qrcode {
     display: block;
     display: flex;
     justify-content: center;
