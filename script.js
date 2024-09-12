@@ -10,16 +10,11 @@ async function fetchCardData(key) {
 
     try {
         const response = await fetch(`${baseUrl}flex_messages/${key}.json`);
-        console.log('Response status:', response.status);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        console.log('Fetched data:', data);
-        if (!data[key]) {
-            throw new Error('找不到對應的名片數據');
-        }
-        return data[key];
+        return data;
     } catch (error) {
         console.error('獲取數據時出錯:', error);
         throw error;
