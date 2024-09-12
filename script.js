@@ -51,7 +51,9 @@ document.addEventListener('DOMContentLoaded', async function() {
         const urlParams = new URLSearchParams(window.location.search);
         const cardKey = urlParams.get('key');
         const flexMessage = fetchCardData(cardKey);
+        console.log(flexMessage);
         const cardInfo = document.getElementById('cardInfo');
+        console.log(cardInfo);
         cardInfo.innerHTML = `<p class="lead">名片已準備好分享</p>`;
 
         if (liff.isInClient()) {
