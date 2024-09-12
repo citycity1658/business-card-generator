@@ -5,7 +5,7 @@ function getCardKey() {
 }
 
 async function fetchCardData(key) {
-    const response = await fetch('flex_messages/' + key + '.json');
+    const response = await fetch(`flex_messages/${key}.json`);
     if (!response.ok) {
         throw new Error('無法獲取名片數據');
     }
