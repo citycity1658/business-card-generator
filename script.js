@@ -1,6 +1,15 @@
 function getCardKey() {
     const params = new URLSearchParams(window.location.search);
-    return params.get('key');
+    var liffstate = params.get('liff.state');
+    if (liffstate) {
+        // 解碼 liff.state
+        liffstate = decodeURIComponent(liffstate);
+        
+        const stateParams = new URLSearchParams(liffstate);
+        return stateParams.get('key');
+    } else {
+        return null;
+    }
 }
 
 async function fetchCardData(key) {
