@@ -1,53 +1,78 @@
-document.getElementById('business-card-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+function getCardKey() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('key');
+}
 
-    // 获取输入数据
-    const name = String(document.getElementById('name').value);
-    const title = String(document.getElementById('title').value);
-    const email = String(document.getElementById('email').value);
-    const phone = String(document.getElementById('phone').value);
-    const website = String(document.getElementById('website').value);
-        // 更新名片預覽
-        document.getElementById('preview-name').textContent = name;
-        document.getElementById('preview-title').textContent = title;
-        document.getElementById('preview-email').textContent = email;
-        document.getElementById('preview-phone').textContent = phone;
-        document.getElementById('preview-website').textContent = website;
+async function fetchCardData(key) {
+    const response = await fetch('api.json');
+    if (!response.ok) {
+        throw new Error('無法獲取名片數據');
+    }
+    const data = await response.json();
+    if (!data[key]) {
+        throw new Error('找不到對應的名片數據');
+    }
+    return data[key];
+}
 
-    // 创建 vCard 字符串
-    const vCard = `BEGIN:VCARD
-VERSION:3.0
-FN:${name}
-TITLE:${title}
-EMAIL:${email}
-TEL:${phone}
-URL:${website}
-END:VCARD`;
-
-    // 清除之前的二维码和下载按钮
+function generateQRCode(url) {
     const qrcodeElement = document.getElementById('qrcode');
-    qrcodeElement.innerHTML = '';
-    const downloadContainer = document.getElementById('download-container');
-    downloadContainer.innerHTML = '';
-
-    // 生成二维码
-    QRCode.toCanvas(qrcodeElement, vCard, {
-        width: 200,
-        margin: 4
-    }, function (error) {
-        if (error) {
-            console.error('生成二维码时出错:', error);
-            alert('生成二维码时出错，请稍后再试。');
-        } else {
-            console.log('二维码生成完成!');
-
-            // 创建下载按钮
-            const downloadBtn = document.createElement('a');
-            downloadBtn.textContent = '下载二维码';
-            downloadBtn.classList.add('download-btn');
-            downloadBtn.href = qrcodeElement.toDataURL('image/png');
-            downloadBtn.download = 'qrcode.png';
-            downloadContainer.appendChild(downloadBtn);
-        }
+    qrcodeElement.innerHTML = ''; // 清除舊的 QR 碼
+    QRCode.toCanvas(qrcodeElement, url, { width: 200 }, function (error) {
+        if (error) console.error('QR碼生成錯誤:', error);
     });
+}
+
+document.addEventListener('DOMContentLoaded', async function() {
+    const cardKey = getCardKey();
+    if (!cardKey) {
+        alert('未提供有效的名片 key');
+        return;
+    }
+
+    try {
+        const flexMessage = await fetchCardData(cardKey);
+        const cardInfo = document.getElementById('cardInfo');
+        cardInfo.innerHTML = `<p class="lead">名片已準備好分享</p>`;
+
+        // 生成當前頁面的 QR 碼
+        generateQRCode(window.location.href);
+
+        await liff.init({ liffId: "2006307570-gVmJm6v1" });
+
+        const shareButton = document.getElementById('shareButton');
+        const downloadQRButton = document.getElementById('downloadQRButton');
+
+        if (liff.isInClient()) {
+            shareButton.addEventListener('click', function() {
+                liff.shareTargetPicker([flexMessage])
+                    .then((res) => {
+                        if (res) {
+                            alert('名片已分享');
+                        } else {
+                            alert('分享已取消');
+                        }
+                    })
+                    .catch((error) => {
+                        console.error('分享失敗', error);
+                    });
+            });
+        } else {
+            shareButton.textContent = '請在 LINE 應用程式中開啟';
+            shareButton.disabled = true;
+        }
+
+        downloadQRButton.addEventListener('click', function() {
+            const canvas = document.querySelector('#qrcode canvas');
+            const image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+            const link = document.createElement('a');
+            link.download = 'qrcode.png';
+            link.href = image;
+            link.click();
+        });
+
+    } catch (error) {
+        console.error('Error:', error);
+        alert('獲取名片數據時出錯');
+    }
 });
