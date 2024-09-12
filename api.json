@@ -32,7 +32,7 @@
               "contents": [
                 {
                   "type": "text",
-                  "text": "BNI®桃園東A區 永工分會",
+                  "text": "BNI®桃園東A區 永工��會",
                   "weight": "bold",
                   "size": "xl",
                   "color": "#FF0000"
@@ -197,5 +197,5 @@
             }
           }
         ]
-      } 
+      }
   }
