@@ -25,34 +25,19 @@ function generateQRCode(url) {
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
-    const cardKey = getCardKey();
-    console.log("Card Key:", cardKey);
-    if (!cardKey) {
-        alert('未提供有效的名片 key');
-        return;
-    }
 
     try {
-        const flexMessage = await fetchCardData(cardKey);
-        const cardInfo = document.getElementById('cardInfo');
-        cardInfo.innerHTML = `<p class="lead">名片已準備好分享</p>`;
-
-        // 生成當前頁面的 QR 碼
-        generateQRCode(window.location.href);
 
         await liff.init({ liffId: "2006307570-gVmJm6v1" })
         .then(() => {
             if (liff.isLoggedIn()) {
                 // Get URL parameters
-                const urlParams = new URLSearchParams(window.location.search);
-                const key = urlParams.get('key');
+
+                // 生成當前頁面的 QR 碼
+                generateQRCode(window.location.href);
                 
                 // Use the key or concatenate it with other values
-                console.log("Key:", key);
                 
-                // Example of concatenating the key with another string
-                const concatenatedValue = key + "-additionalValue";
-                console.log("Concatenated Value:", concatenatedValue);
             } else {
                 liff.login();
             }
@@ -63,6 +48,11 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         const shareButton = document.getElementById('shareButton');
         const downloadQRButton = document.getElementById('downloadQRButton');
+        const urlParams = new URLSearchParams(window.location.search);
+        const cardKey = urlParams.get('key');
+        const flexMessage = fetchCardData(cardKey);
+        const cardInfo = document.getElementById('cardInfo');
+        cardInfo.innerHTML = `<p class="lead">名片已準備好分享</p>`;
 
         if (liff.isInClient()) {
             shareButton.addEventListener('click', function() {
