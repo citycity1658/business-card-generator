@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
 
         // 更新分享按鈕文字
-        shareButton.textContent = liff.isInClient() ? '分享名片' : '複製分享鏈接';
+        shareButton.textContent = '分享名片';
 
         downloadQRButton.addEventListener('click', function() {
             const canvas = document.querySelector('#qrcode canvas');
