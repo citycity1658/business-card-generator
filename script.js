@@ -28,46 +28,35 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     try {
 
-        await liff.init({ liffId: "2006307570-gVmJm6v1" })
-        .then(() => {
-            if (liff.isLoggedIn()) {
-                // Get URL parameters
+        await liff.init({ liffId: "2006307570-gVmJm6v1" });
+        if (!liff.isLoggedIn()) {
+            liff.login();
+            return;
+        }
 
-                // 生成當前頁面的 QR 碼
-                
-                // Use the key or concatenate it with other values
-                
-            } else {
-                liff.login();
-            }
-        })
-        .catch((err) => {
-            console.error("LIFF Initialization Error:", err);
-        });;
+        const urlParams = new URLSearchParams(window.location.search);
+        const cardKey = urlParams.get('key');
+        const flexMessage = await fetchCardData(cardKey);  // 使用 await 等待数据获取完成
+        console.log(flexMessage);
 
         const shareButton = document.getElementById('shareButton');
         const downloadQRButton = document.getElementById('downloadQRButton');
-        const urlParams = new URLSearchParams(window.location.search);
-        const cardKey = urlParams.get('key');
-        const flexMessage = fetchCardData(cardKey);
-        console.log(flexMessage);
         const cardInfo = document.getElementById('cardInfo');
         console.log(cardInfo);
         cardInfo.innerHTML = `<p class="lead">名片已準備好分享</p>`;
 
         if (liff.isInClient()) {
-            shareButton.addEventListener('click', function() {
-                liff.shareTargetPicker([flexMessage])
-                    .then((res) => {
-                        if (res) {
-                            alert('名片已分享');
-                        } else {
-                            alert('分享已取消');
-                        }
-                    })
-                    .catch((error) => {
-                        console.error('分享失敗', error);
-                    });
+            shareButton.addEventListener('click', async function() {  // 将事件监听器改为异步函数
+                try {
+                    const res = await liff.shareTargetPicker([flexMessage]);  // 使用数组包裹 flexMessage
+                    if (res) {
+                        alert('名片已分享');
+                    } else {
+                        alert('分享已取消');
+                    }
+                } catch (error) {
+                    console.error('分享失败', error);
+                }
             });
         } else {
             shareButton.textContent = '請在 LINE 應用程式中開啟';
