@@ -5,15 +5,25 @@ function getCardKey() {
 }
 
 async function fetchCardData(key) {
-    const response = await fetch(`flex_messages/${key}.json`);
-    if (!response.ok) {
-        throw new Error('無法獲取名片數據');
+    // 定義基礎 URL
+    const baseUrl = 'https://citycity1658.github.io/business-card-generator/';  // 替換為您的實際 URL
+
+    try {
+        const response = await fetch(`${baseUrl}flex_messages/${key}.json`);
+        console.log('Response status:', response.status);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.log('Fetched data:', data);
+        if (!data[key]) {
+            throw new Error('找不到對應的名片數據');
+        }
+        return data[key];
+    } catch (error) {
+        console.error('獲取數據時出錯:', error);
+        throw error;
     }
-    const data = await response.json();
-    if (!data[key]) {
-        throw new Error('找不到對應的名片數據');
-    }
-    return data[key];
 }
 
 function generateQRCode(url) {
