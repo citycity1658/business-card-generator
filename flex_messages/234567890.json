@@ -1,4 +1,7 @@
 {
+  "type": "flex",
+  "altText": "BNI®桃園東A區 永工分會│電子名片來囉！",
+  "contents": {
     "type": "carousel",
     "contents": [
       {
@@ -61,3 +64,4 @@
       }
     ]
   }
+}
