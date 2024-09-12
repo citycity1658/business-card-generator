@@ -38,7 +38,26 @@ document.addEventListener('DOMContentLoaded', async function() {
         // 生成當前頁面的 QR 碼
         generateQRCode(window.location.href);
 
-        await liff.init({ liffId: "2006307570-gVmJm6v1" });
+        await liff.init({ liffId: "2006307570-gVmJm6v1" })
+        .then(() => {
+            if (liff.isLoggedIn()) {
+                // Get URL parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const key = urlParams.get('key');
+                
+                // Use the key or concatenate it with other values
+                console.log("Key:", key);
+                
+                // Example of concatenating the key with another string
+                const concatenatedValue = key + "-additionalValue";
+                console.log("Concatenated Value:", concatenatedValue);
+            } else {
+                liff.login();
+            }
+        })
+        .catch((err) => {
+            console.error("LIFF Initialization Error:", err);
+        });;
 
         const shareButton = document.getElementById('shareButton');
         const downloadQRButton = document.getElementById('downloadQRButton');
