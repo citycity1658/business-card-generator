@@ -34,6 +34,7 @@ function generateQRCode(url) {
 
 document.addEventListener('DOMContentLoaded', async function() {
     const cardKey = getCardKey();
+    console.log("Card Key:", cardKey);
     if (!cardKey) {
         alert('未提供有效的名片 key');
         return;
