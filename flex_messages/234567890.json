@@ -1,199 +1,63 @@
 {
     "type": "carousel",
     "contents": [
-        {
-            "type": "bubble",
-            "header": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "text",
-                        "text": "BNI®桃園東A區 永工分會",
-                        "color": "#FFFFFF",
-                        "weight": "bold",
-                        "size": "xl",
-                        "align": "center"
-                    }
-                ],
-                "backgroundColor": "#FF0000"
-            },
-            "hero": {
-                "type": "image",
-                "url": "https://example.com/bni-zoom-image.jpg",
-                "size": "full",
-                "aspectRatio": "20:13",
-                "aspectMode": "cover"
-            },
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "text",
-                        "text": "BNI®桃園東A區 永工��會",
-                        "weight": "bold",
-                        "size": "xl",
-                        "color": "#FF0000"
-                    },
-                    {
-                        "type": "text",
-                        "text": "誠摯邀請您！",
-                        "weight": "bold",
-                        "size": "xl",
-                        "color": "#FF0000"
-                    },
-                    {
-                        "type": "text",
-                        "text": "BNI®是一家全球性且經過驗證的商業網絡組織",
-                        "wrap": true,
-                        "margin": "md"
-                    },
-                    {
-                        "type": "text",
-                        "text": "永工是以服務全台灣製造業工廠為目標的分會",
-                        "wrap": true
-                    },
-                    {
-                        "type": "text",
-                        "text": "在BNI能幫助您壯大您的生意！創造無限商機！",
-                        "wrap": true
-                    }
-                ]
-            },
-            "footer": {
-                "type": "box",
-                "layout": "vertical",
-                "spacing": "sm",
-                "contents": [
-                    {
-                        "type": "button",
-                        "style": "primary",
-                        "action": {
-                            "type": "uri",
-                            "label": "為什麼要加入BNI®",
-                            "uri": "https://example.com/why-join-bni"
-                        }
-                    },
-                    {
-                        "type": "button",
-                        "style": "secondary",
-                        "color": "#8B0000",
-                        "action": {
-                            "type": "uri",
-                            "label": "FACEBOOK粉絲專頁",
-                            "uri": "https://facebook.com/bni-page"
-                        }
-                    },
-                    {
-                        "type": "button",
-                        "style": "secondary",
-                        "color": "#8B0000",
-                        "action": {
-                            "type": "uri",
-                            "label": "分享名片➤給朋友",
-                            "uri": "https://line.me/R/msg/text/?BNI®桃園東A區%20永工分會邀請您！"
-                        }
-                    }
-                ]
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "wrap": true
             }
+          ]
         },
-        {
-            "type": "bubble",
-            "hero": {
-                "type": "image",
-                "url": "https://example.com/bni-master-connectors.jpg",
-                "size": "full",
-                "aspectRatio": "20:13",
-                "aspectMode": "cover"
-            },
-            "body": {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                    {
-                        "type": "text",
-                        "text": "BNI MASTER CONNECTORS",
-                        "weight": "bold",
-                        "size": "xl",
-                        "color": "#FF0000",
-                        "align": "center"
-                    },
-                    {
-                        "type": "box",
-                        "layout": "horizontal",
-                        "margin": "md",
-                        "contents": [
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "桃園東區 執行董事",
-                                        "size": "sm"
-                                    },
-                                    {
-                                        "type": "text",
-                                        "text": "Toni",
-                                        "size": "md",
-                                        "weight": "bold"
-                                    },
-                                    {
-                                        "type": "text",
-                                        "text": "許翊弘",
-                                        "size": "xl",
-                                        "weight": "bold"
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [
-                                    {
-                                        "type": "text",
-                                        "text": "區域董事",
-                                        "size": "sm"
-                                    },
-                                    {
-                                        "type": "text",
-                                        "text": "程萬里",
-                                        "size": "xl",
-                                        "weight": "bold"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
-            "footer": {
-                "type": "box",
-                "layout": "horizontal",
-                "spacing": "sm",
-                "contents": [
-                    {
-                        "type": "button",
-                        "style": "primary",
-                        "action": {
-                            "type": "uri",
-                            "label": "關於BNI®",
-                            "uri": "https://example.com/about-bni"
-                        }
-                    },
-                    {
-                        "type": "button",
-                        "style": "secondary",
-                        "color": "#8B0000",
-                        "action": {
-                            "type": "uri",
-                            "label": "分享",
-                            "uri": "https://example.com/share"
-                        }
-                    }
-                ]
+        "footer": {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "style": "primary",
+              "action": {
+                "type": "uri",
+                "label": "Go",
+                "uri": "https://example.com"
+              }
             }
+          ]
         }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "Hello, World!",
+              "wrap": true
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "style": "primary",
+              "action": {
+                "type": "uri",
+                "label": "Go",
+                "uri": "https://example.com"
+              }
+            }
+          ]
+        }
+      }
     ]
-}
+  }
