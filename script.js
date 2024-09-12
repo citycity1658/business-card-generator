@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', async function() {
                 // Get URL parameters
 
                 // 生成當前頁面的 QR 碼
-                generateQRCode(window.location.href);
                 
                 // Use the key or concatenate it with other values
                 
