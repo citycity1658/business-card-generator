@@ -9,7 +9,7 @@ async function fetchCardData(key) {
     const baseUrl = 'https://citycity1658.github.io/business-card-generator/';  // 替換為您的實際 URL
 
     try {
-        const response = await fetch(`${baseUrl}flex_messages/${key}.json`);
+        const response = await fetch(`${baseUrl}processed_messages/${key}.json`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
