@@ -99,7 +99,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://card.qiqiinim.com/storage/uploads/cadf8f8e643b3ffe444d36d1bc6ebd69.jpg",
+              "url": "https://i.imgur.com/iOvHFIv.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -114,10 +114,11 @@
                   "weight": "bold",
                   "size": "lg",
                   "wrap": true,
-                  "text": "桃園東區執行董事│區域董事",
+                  "text": "桃園東區執行董事",
                   "gravity": "center",
                   "margin": "md",
-                  "color": "#dd3338"
+                  "color": "#dd3338",
+                  "align": "center"
                 },
                 {
                   "type": "box",
@@ -198,7 +199,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://i.imgur.com/Zt6Ba76.png",
+              "url": "https://i.imgur.com/bM6xLL2.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -216,7 +217,8 @@
                   "text": "永齊分會大使",
                   "gravity": "center",
                   "margin": "md",
-                  "color": "#dd3338"
+                  "color": "#dd3338",
+                  "align": "center"
                 },
                 {
                   "type": "box",
@@ -297,7 +299,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://card.qiqiinim.com/storage/uploads/64d7bc31df985e75c303fb2ee9e411c5.jpg",
+              "url": "https://i.imgur.com/b1wDJYc.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -312,7 +314,7 @@
                   "weight": "bold",
                   "size": "lg",
                   "wrap": true,
-                  "text": "企業服務組│SERVICE",
+                  "text": "整合行銷聯盟│SERVICE",
                   "gravity": "center",
                   "margin": "md",
                   "color": "#de5532"
@@ -321,33 +323,6 @@
                   "type": "box",
                   "layout": "horizontal",
                   "contents": [
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "button",
-                          "action": {
-                            "type": "uri",
-                            "label": "更多會員資訊➤",
-                            "uri": "https://drive.google.com/drive/folders/1-L8Mx5_F6kL3Y6-n7S4nbDLpIaNLzcnS?usp=drive_link"
-                          },
-                          "style": "primary",
-                          "color": "#de5532",
-                          "height": "sm"
-                        }
-                      ],
-                      "borderColor": "#ffffff",
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "flex": 2,
-                      "action": {
-                        "type": "uri",
-                        "label": "action",
-                        "uri": "http://linecorp.com/"
-                      },
-                      "height": "40px"
-                    },
                     {
                       "type": "box",
                       "layout": "vertical",
@@ -396,7 +371,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://card.qiqiinim.com/storage/uploads/4c40e6969eb406080ed696bdd7496c9e.jpg",
+              "url": "https://i.imgur.com/RRZWtng.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -411,10 +386,10 @@
                   "weight": "bold",
                   "size": "lg",
                   "wrap": true,
-                  "text": "土地廠房組│LAND FACTORY",
+                  "text": "民生服務組",
                   "gravity": "center",
                   "margin": "md",
-                  "color": "#e16c2f"
+                  "color": "#117A2F"
                 },
                 {
                   "type": "box",
@@ -428,38 +403,11 @@
                           "type": "button",
                           "action": {
                             "type": "uri",
-                            "label": "更多會員資訊➤",
-                            "uri": "https://drive.google.com/drive/folders/1BiSWDbnhPwYXKT7FtIpkBen3TgaElp9S?usp=drive_link"
-                          },
-                          "style": "primary",
-                          "color": "#e16c2f",
-                          "height": "sm"
-                        }
-                      ],
-                      "borderColor": "#ffffff",
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "flex": 2,
-                      "action": {
-                        "type": "uri",
-                        "label": "action",
-                        "uri": "http://linecorp.com/"
-                      },
-                      "height": "40px"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "button",
-                          "action": {
-                            "type": "uri",
                             "label": "分享➤",
                             "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
                           },
                           "style": "primary",
-                          "color": "#e16c2f",
+                          "color": "#117A2F",
                           "height": "sm"
                         }
                       ],
@@ -495,7 +443,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://card.qiqiinim.com/storage/uploads/6f4ad1c95bd2d4054668ccd49d020a1d.jpg",
+              "url": "https://i.imgur.com/Re1RFlX.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -510,10 +458,10 @@
                   "weight": "bold",
                   "size": "lg",
                   "wrap": true,
-                  "text": "金融服務組│永續節能環保",
+                  "text": "運動健康組",
                   "gravity": "center",
                   "margin": "md",
-                  "color": "#33CC66"
+                  "color": "#1645B8"
                 },
                 {
                   "type": "box",
@@ -527,236 +475,11 @@
                           "type": "button",
                           "action": {
                             "type": "uri",
-                            "label": "更多會員資訊➤",
-                            "uri": "https://drive.google.com/drive/folders/121AuuK_X7-RbTER3s1NdGM4BK1qxxJIV?usp=drive_link"
-                          },
-                          "style": "primary",
-                          "color": "#33CC66",
-                          "height": "sm"
-                        }
-                      ],
-                      "borderColor": "#ffffff",
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "flex": 2,
-                      "action": {
-                        "type": "uri",
-                        "label": "action",
-                        "uri": "http://linecorp.com/"
-                      },
-                      "height": "40px"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "button",
-                          "action": {
-                            "type": "uri",
                             "label": "分享➤",
                             "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
                           },
                           "style": "primary",
-                          "color": "#33CC66",
-                          "height": "sm"
-                        }
-                      ],
-                      "borderColor": "#ffffff",
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "height": "40px",
-                      "flex": 1
-                    }
-                  ],
-                  "spacing": "4px"
-                }
-              ],
-              "spacing": "md",
-              "backgroundColor": "#ffffff",
-              "paddingBottom": "10px",
-              "paddingEnd": "10px",
-              "paddingStart": "10px",
-              "position": "absolute",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "offsetBottom": "0px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://card.qiqiinim.com/storage/uploads/0bdc8a7240ecfc5b331896d881a6e1b9.jpg",
-              "aspectRatio": "2:3",
-              "aspectMode": "cover",
-              "size": "full",
-              "gravity": "top"
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [
-                {
-                  "type": "text",
-                  "weight": "bold",
-                  "size": "lg",
-                  "wrap": true,
-                  "text": "工業生產製造│PRODUCTION",
-                  "gravity": "center",
-                  "margin": "md",
-                  "color": "#308AD5"
-                },
-                {
-                  "type": "box",
-                  "layout": "horizontal",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "button",
-                          "action": {
-                            "type": "uri",
-                            "label": "更多會員資訊➤",
-                            "uri": "https://drive.google.com/drive/folders/1pDYpirw994ZhChqjKg8xrG4_CUtMJJQj?usp=drive_link"
-                          },
-                          "style": "primary",
-                          "color": "#308AD5",
-                          "height": "sm"
-                        }
-                      ],
-                      "borderColor": "#ffffff",
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "flex": 2,
-                      "action": {
-                        "type": "uri",
-                        "label": "action",
-                        "uri": "http://linecorp.com/"
-                      },
-                      "height": "40px"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "button",
-                          "action": {
-                            "type": "uri",
-                            "label": "分享➤",
-                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
-                          },
-                          "style": "primary",
-                          "color": "#308AD5",
-                          "height": "sm"
-                        }
-                      ],
-                      "borderColor": "#ffffff",
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "height": "40px",
-                      "flex": 1
-                    }
-                  ],
-                  "spacing": "4px"
-                }
-              ],
-              "spacing": "md",
-              "backgroundColor": "#ffffff",
-              "paddingBottom": "10px",
-              "paddingEnd": "10px",
-              "paddingStart": "10px",
-              "position": "absolute",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "offsetBottom": "0px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://card.qiqiinim.com/storage/uploads/e3b8a9ae03fe5571adb57fe27fd3026c.jpg",
-              "aspectRatio": "2:3",
-              "aspectMode": "cover",
-              "size": "full",
-              "gravity": "top"
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [
-                {
-                  "type": "text",
-                  "weight": "bold",
-                  "size": "lg",
-                  "wrap": true,
-                  "text": "市場行銷組│包裝物流組",
-                  "gravity": "center",
-                  "margin": "md",
-                  "color": "#dd3338"
-                },
-                {
-                  "type": "box",
-                  "layout": "horizontal",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "button",
-                          "action": {
-                            "type": "uri",
-                            "label": "更多會員資訊➤",
-                            "uri": "https://drive.google.com/drive/folders/1lV8c7ntban1DlGO8vE_lU7XcsgVD6OcU?usp=drive_link"
-                          },
-                          "style": "primary",
-                          "color": "#DD3338",
-                          "height": "sm"
-                        }
-                      ],
-                      "borderColor": "#ffffff",
-                      "borderWidth": "1px",
-                      "cornerRadius": "4px",
-                      "flex": 2,
-                      "action": {
-                        "type": "uri",
-                        "label": "action",
-                        "uri": "http://linecorp.com/"
-                      },
-                      "height": "40px"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "button",
-                          "action": {
-                            "type": "uri",
-                            "label": "分享➤",
-                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
-                          },
-                          "style": "primary",
-                          "color": "#DD3338",
+                          "color": "#1645B8",
                           "height": "sm"
                         }
                       ],
