@@ -1,14 +1,14 @@
 {
-    "type": "flex",
-    "altText": "BNI®桃園東A區 永工分會│電子名片來囉！",
-    "contents": {
+  "type": "flex",
+  "altText": "BNI®桃園東A區 永工分會│電子名片來囉！",
+  "contents": {
     "type": "carousel",
     "contents": [
       {
         "type": "bubble",
         "hero": {
           "type": "image",
-          "url": "https://i.imgur.com/WTP4Xs1.png",
+          "url": "https://card.qiqiinim.com/storage/uploads/b0182c43616ac9763c61879c0f9c1767.jpg",
           "size": "full",
           "aspectRatio": "4:3",
           "aspectMode": "cover"
@@ -22,7 +22,7 @@
               "weight": "bold",
               "size": "xl",
               "wrap": true,
-              "text": "BNI®桃園東A區 永齊分會 誠摯邀請您！",
+              "text": "BNI®桃園東A區 永工分會 誠摯邀請您！",
               "gravity": "center",
               "margin": "xl",
               "color": "#e50c18"
@@ -70,7 +70,7 @@
               "action": {
                 "type": "uri",
                 "label": "FACEBOOK粉絲專頁",
-                "uri": "https://www.facebook.com/share/hZHSZjmWLHipyKf5/?mibextid=LQQJ4d"
+                "uri": "https://www.facebook.com/profile.php?id=61556733291161"
               },
               "height": "sm",
               "color": "#e50c18",
@@ -81,7 +81,7 @@
               "action": {
                 "type": "uri",
                 "label": "分享名片➤給朋友",
-                "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                "uri": "https://liff.line.me/1656285622-dBEVmW1a/linecard?key=217P1b5NJNcE153053"
               },
               "style": "primary",
               "height": "sm",
@@ -159,7 +159,7 @@
                           "action": {
                             "type": "uri",
                             "label": "分享➤",
-                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                            "uri": "https://liff.line.me/1656285622-dBEVmW1a/linecard?key=217P1b5NJNcE153053"
                           },
                           "style": "primary",
                           "color": "#414141",
@@ -198,7 +198,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://i.imgur.com/Zt6Ba76.png",
+              "url": "https://card.qiqiinim.com/storage/uploads/12183f5200f274533c4516d124fce952.jpg",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -213,7 +213,7 @@
                   "weight": "bold",
                   "size": "lg",
                   "wrap": true,
-                  "text": "永齊分會大使",
+                  "text": "永工分會董事顧問│大使",
                   "gravity": "center",
                   "margin": "md",
                   "color": "#dd3338"
@@ -258,7 +258,7 @@
                           "action": {
                             "type": "uri",
                             "label": "分享➤",
-                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                            "uri": "https://liff.line.me/1656285622-dBEVmW1a/linecard?key=217P1b5NJNcE153053"
                           },
                           "style": "primary",
                           "color": "#414141",
@@ -456,7 +456,7 @@
                           "action": {
                             "type": "uri",
                             "label": "分享➤",
-                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                            "uri": "https://liff.line.me/1656285622-dBEVmW1a/linecard?key=217P1b5NJNcE153053"
                           },
                           "style": "primary",
                           "color": "#e16c2f",
@@ -555,7 +555,7 @@
                           "action": {
                             "type": "uri",
                             "label": "分享➤",
-                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                            "uri": "https://liff.line.me/1656285622-dBEVmW1a/linecard?key=217P1b5NJNcE153053"
                           },
                           "style": "primary",
                           "color": "#33CC66",
@@ -654,7 +654,7 @@
                           "action": {
                             "type": "uri",
                             "label": "分享➤",
-                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                            "uri": "https://liff.line.me/1656285622-dBEVmW1a/linecard?key=217P1b5NJNcE153053"
                           },
                           "style": "primary",
                           "color": "#308AD5",
@@ -753,7 +753,7 @@
                           "action": {
                             "type": "uri",
                             "label": "分享➤",
-                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                            "uri": "https://liff.line.me/1656285622-dBEVmW1a/linecard?key=217P1b5NJNcE153053"
                           },
                           "style": "primary",
                           "color": "#DD3338",
