@@ -1,0 +1,35 @@
+{
+  "type": "flex",
+  "altText": "張三│電子名片來囉！",
+  "contents": {
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "張三",
+          "weight": "bold",
+          "size": "xl"
+        },
+        {
+          "type": "text",
+          "text": "軟體工程師"
+        },
+        {
+          "type": "text",
+          "text": "0912-345-678"
+        },
+        {
+          "type": "text",
+          "text": "zhangsan@example.com"
+        },
+        {
+          "type": "text",
+          "text": "https://zhangsan.example.com"
+        }
+      ]
+    }
+  }
+}

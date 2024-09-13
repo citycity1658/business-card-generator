@@ -1,7 +1,4 @@
 {
-    "type": "flex",
-    "altText": "名片分享 - 李四",
-    "contents": {
         "type": "bubble",
         "body": {
             "type": "box",
@@ -32,4 +29,3 @@
             ]
         }
     }
-}

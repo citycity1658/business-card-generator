@@ -1,0 +1,35 @@
+{
+  "type": "flex",
+  "altText": "李四│電子名片來囉！",
+  "contents": {
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "李四",
+          "weight": "bold",
+          "size": "xl"
+        },
+        {
+          "type": "text",
+          "text": "市場經理"
+        },
+        {
+          "type": "text",
+          "text": "0923-456-789"
+        },
+        {
+          "type": "text",
+          "text": "lisi@example.com"
+        },
+        {
+          "type": "text",
+          "text": "https://lisi.example.com"
+        }
+      ]
+    }
+  }
+}
