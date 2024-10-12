@@ -99,7 +99,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://i.imgur.com/iOvHFIv.png",
+              "url": "https://i.imgur.com/Ohv3N84.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -199,7 +199,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://i.imgur.com/m5EJUx1.png",
+              "url": "https://i.imgur.com/11I0kEf.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -299,7 +299,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://i.imgur.com/b1wDJYc.png",
+              "url": "https://i.imgur.com/6fLpnaJ.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -314,10 +314,10 @@
                   "weight": "bold",
                   "size": "lg",
                   "wrap": true,
-                  "text": "整合行銷聯盟│SERVICE",
+                  "text": "住商工程組",
                   "gravity": "center",
                   "margin": "md",
-                  "color": "#de5532"
+                  "color": "#dd3338"
                 },
                 {
                   "type": "box",
@@ -335,7 +335,7 @@
                             "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
                           },
                           "style": "primary",
-                          "color": "#de5532",
+                          "color": "#dd3338",
                           "height": "sm"
                         }
                       ],
@@ -371,7 +371,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://i.imgur.com/RRZWtng.png",
+              "url": "https://i.imgur.com/Vss7NTV.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -386,10 +386,10 @@
                   "weight": "bold",
                   "size": "lg",
                   "wrap": true,
-                  "text": "民生服務組",
+                  "text": "企業服務組",
                   "gravity": "center",
                   "margin": "md",
-                  "color": "#117A2F"
+                  "color": "#dd3338"
                 },
                 {
                   "type": "box",
@@ -407,7 +407,7 @@
                             "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
                           },
                           "style": "primary",
-                          "color": "#117A2F",
+                          "color": "#dd3338",
                           "height": "sm"
                         }
                       ],
@@ -443,7 +443,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://i.imgur.com/Re1RFlX.png",
+              "url": "https://i.imgur.com/kqRyCRC.png",
               "aspectRatio": "2:3",
               "aspectMode": "cover",
               "size": "full",
@@ -461,7 +461,7 @@
                   "text": "運動健康組",
                   "gravity": "center",
                   "margin": "md",
-                  "color": "#1645B8"
+                  "color": "#dd3338"
                 },
                 {
                   "type": "box",
@@ -479,7 +479,223 @@
                             "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
                           },
                           "style": "primary",
-                          "color": "#1645B8",
+                          "color": "#dd3338",
+                          "height": "sm"
+                        }
+                      ],
+                      "borderColor": "#ffffff",
+                      "borderWidth": "1px",
+                      "cornerRadius": "4px",
+                      "height": "40px",
+                      "flex": 1
+                    }
+                  ],
+                  "spacing": "4px"
+                }
+              ],
+              "spacing": "md",
+              "backgroundColor": "#ffffff",
+              "paddingBottom": "10px",
+              "paddingEnd": "10px",
+              "paddingStart": "10px",
+              "position": "absolute",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "offsetBottom": "0px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://i.imgur.com/iU8okGN.png",
+              "aspectRatio": "2:3",
+              "aspectMode": "cover",
+              "size": "full",
+              "gravity": "top"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "weight": "bold",
+                  "size": "lg",
+                  "wrap": true,
+                  "text": "金融理財組",
+                  "gravity": "center",
+                  "margin": "md",
+                  "color": "#dd3338"
+                },
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "button",
+                          "action": {
+                            "type": "uri",
+                            "label": "分享➤",
+                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                          },
+                          "style": "primary",
+                          "color": "#dd3338",
+                          "height": "sm"
+                        }
+                      ],
+                      "borderColor": "#ffffff",
+                      "borderWidth": "1px",
+                      "cornerRadius": "4px",
+                      "height": "40px",
+                      "flex": 1
+                    }
+                  ],
+                  "spacing": "4px"
+                }
+              ],
+              "spacing": "md",
+              "backgroundColor": "#ffffff",
+              "paddingBottom": "10px",
+              "paddingEnd": "10px",
+              "paddingStart": "10px",
+              "position": "absolute",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "offsetBottom": "0px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://i.imgur.com/H0k4RIv.png",
+              "aspectRatio": "2:3",
+              "aspectMode": "cover",
+              "size": "full",
+              "gravity": "top"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "weight": "bold",
+                  "size": "lg",
+                  "wrap": true,
+                  "text": "民生服務組",
+                  "gravity": "center",
+                  "margin": "md",
+                  "color": "#dd3338"
+                },
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "button",
+                          "action": {
+                            "type": "uri",
+                            "label": "分享➤",
+                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                          },
+                          "style": "primary",
+                          "color": "#dd3338",
+                          "height": "sm"
+                        }
+                      ],
+                      "borderColor": "#ffffff",
+                      "borderWidth": "1px",
+                      "cornerRadius": "4px",
+                      "height": "40px",
+                      "flex": 1
+                    }
+                  ],
+                  "spacing": "4px"
+                }
+              ],
+              "spacing": "md",
+              "backgroundColor": "#ffffff",
+              "paddingBottom": "10px",
+              "paddingEnd": "10px",
+              "paddingStart": "10px",
+              "position": "absolute",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "offsetBottom": "0px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://i.imgur.com/ZsJ52Ok.png",
+              "aspectRatio": "2:3",
+              "aspectMode": "cover",
+              "size": "full",
+              "gravity": "top"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "weight": "bold",
+                  "size": "lg",
+                  "wrap": true,
+                  "text": "行銷品牌組",
+                  "gravity": "center",
+                  "margin": "md",
+                  "color": "#dd3338"
+                },
+                {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "vertical",
+                      "contents": [
+                        {
+                          "type": "button",
+                          "action": {
+                            "type": "uri",
+                            "label": "分享➤",
+                            "uri": "https://liff.line.me/2006307570-gVmJm6v1?key=Yongqi"
+                          },
+                          "style": "primary",
+                          "color": "#dd3338",
                           "height": "sm"
                         }
                       ],
