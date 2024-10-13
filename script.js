@@ -21,14 +21,6 @@ async function fetchCardData(key) {
     }
 }
 
-function generateQRCode(url) {
-    const qrcodeElement = document.getElementById('qrcode');
-    qrcodeElement.innerHTML = ''; // 清除舊的 QR 碼
-    QRCode.toCanvas(qrcodeElement, url, { width: 200 }, function (error) {
-        if (error) console.error('QR碼生成錯誤:', error);
-    });
-}
-
 async function sendShare(flexMessage) {
 
     //  alert(JSON.stringify(flexs)); //12312
@@ -77,7 +69,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         // 生成當前頁面的URL
         const currentUrl = window.location.href;
-        generateQRCode(currentUrl);
 
         shareButton.addEventListener('click', async function() {
             try {
