@@ -124,7 +124,7 @@
       },
       "body": {
         "type": "box",
-        "layout": "vertical",
+        "layout": "horizontal",
         "contents": [
           {
             "type": "box",
@@ -142,9 +142,34 @@
                 "style": "primary"
               }
             ],
-            "borderColor": "#ffffff"
+            "borderColor": "#ffffff",
+            "flex": 1,
+            "borderWidth": "1px",
+            "cornerRadius": "4px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "諮詢",
+                  "uri": "http://linecorp.com/"
+                },
+                "height": "sm",
+                "style": "primary",
+                "color": "#ff9a00",
+                "flex": 1
+              }
+            ],
+            "flex": 1,
+            "borderWidth": "1px",
+            "cornerRadius": "4px"
           }
-        ]
+        ],
+        "spacing": "4px"
       }
     }
   ]
