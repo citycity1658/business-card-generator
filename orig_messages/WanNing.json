@@ -1,151 +1,151 @@
 {
-    "type": "carousel",
-    "contents": [
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://i.imgur.com/7qG42LC.png",
-          "gravity": "top",
-          "size": "full",
-          "aspectRatio": "2:3",
-          "aspectMode": "fit"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "button",
-                      "action": {
-                        "type": "uri",
-                        "label": "關於我➤",
-                        "uri": "https://bni.com.tw/zh-TW/index"
-                      },
-                      "style": "primary",
-                      "color": "#ff9a00",
-                      "height": "sm"
-                    }
-                  ],
-                  "borderColor": "#ffffff",
-                  "borderWidth": "1px",
-                  "cornerRadius": "4px",
-                  "flex": 2,
-                  "action": {
-                    "type": "uri",
-                    "label": "action",
-                    "uri": "http://linecorp.com/"
-                  },
-                  "height": "40px"
-                }
-              ],
-              "spacing": "4px"
-            }
-          ],
-          "paddingBottom": "10px",
-          "paddingStart": "10px",
-          "spacing": "md",
-          "paddingEnd": "10px"
-        }
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/7qG42LC.png",
+        "gravity": "top",
+        "size": "full",
+        "aspectRatio": "2:3",
+        "aspectMode": "fit"
       },
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://i.imgur.com/9zr6YpN.png",
-          "gravity": "top",
-          "size": "full",
-          "aspectRatio": "2:3",
-          "aspectMode": "cover"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "button",
-                      "action": {
-                        "type": "uri",
-                        "label": "關於我➤",
-                        "uri": "https://bni.com.tw/zh-TW/index"
-                      },
-                      "style": "primary",
-                      "color": "#ff9a00",
-                      "height": "sm"
-                    }
-                  ],
-                  "borderColor": "#ffffff",
-                  "borderWidth": "1px",
-                  "cornerRadius": "4px",
-                  "flex": 2,
-                  "action": {
-                    "type": "uri",
-                    "label": "action",
-                    "uri": "http://linecorp.com/"
-                  },
-                  "height": "40px"
-                }
-              ],
-              "spacing": "4px"
-            }
-          ],
-          "spacing": "md",
-          "backgroundColor": "#ffffff",
-          "paddingBottom": "10px",
-          "paddingEnd": "10px",
-          "paddingStart": "5px"
-        }
-      },
-      {
-        "type": "bubble",
-        "hero": {
-          "type": "image",
-          "url": "https://i.imgur.com/wdzeOYS.png",
-          "gravity": "top",
-          "size": "full",
-          "aspectRatio": "2:3",
-          "aspectMode": "cover"
-        },
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [
-                {
-                  "type": "button",
-                  "action": {
-                    "type": "uri",
-                    "label": "關於我",
-                    "uri": "http://linecorp.com/"
-                  },
-                  "color": "#ff9a00",
-                  "height": "sm",
-                  "style": "primary"
-                }
-              ],
-              "borderColor": "#ffffff"
-            }
-          ]
-        }
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "了解更多➤",
+                      "uri": "https://bni.com.tw/zh-TW/index"
+                    },
+                    "style": "primary",
+                    "color": "#ff9a00",
+                    "height": "sm"
+                  }
+                ],
+                "borderColor": "#ffffff",
+                "borderWidth": "1px",
+                "cornerRadius": "4px",
+                "flex": 2,
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "http://linecorp.com/"
+                },
+                "height": "40px"
+              }
+            ],
+            "spacing": "4px"
+          }
+        ],
+        "paddingBottom": "10px",
+        "paddingStart": "10px",
+        "spacing": "md",
+        "paddingEnd": "10px"
       }
-    ]
-  }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/hrU9BbQ.png",
+        "gravity": "top",
+        "size": "full",
+        "aspectRatio": "2:3",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "了解更多➤",
+                      "uri": "https://bni.com.tw/zh-TW/index"
+                    },
+                    "style": "primary",
+                    "color": "#ff9a00",
+                    "height": "sm"
+                  }
+                ],
+                "borderColor": "#ffffff",
+                "borderWidth": "1px",
+                "cornerRadius": "4px",
+                "flex": 2,
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "http://linecorp.com/"
+                },
+                "height": "40px"
+              }
+            ],
+            "spacing": "4px"
+          }
+        ],
+        "spacing": "md",
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "10px",
+        "paddingEnd": "10px",
+        "paddingStart": "5px"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/CLfDe1a.png",
+        "gravity": "top",
+        "size": "full",
+        "aspectRatio": "2:3",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "了解更多➤",
+                  "uri": "http://linecorp.com/"
+                },
+                "color": "#ff9a00",
+                "height": "sm",
+                "style": "primary"
+              }
+            ],
+            "borderColor": "#ffffff"
+          }
+        ]
+      }
+    }
+  ]
+}
