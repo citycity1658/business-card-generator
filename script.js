@@ -82,15 +82,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         // 更新分享按鈕文字
         shareButton.textContent = '分享名片';
 
-        downloadQRButton.addEventListener('click', function() {
-            const canvas = document.querySelector('#qrcode canvas');
-            const image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-            const link = document.createElement('a');
-            link.download = 'qrcode.png';
-            link.href = image;
-            link.click();
-        });
-
     } catch (error) {
         console.error('Error:', error);
         alert('獲取名片數據時出錯');
