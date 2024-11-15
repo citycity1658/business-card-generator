@@ -12,29 +12,40 @@
     </div>
 
     <script>
-        function shareLine() {
-            // 使用 LINE LIFF SDK 分享
+        let flexContent = null;
+
+        async function loadFlexContent() {
+            try {
+                const response = await fetch('orig_messages/WanNing.json');
+                flexContent = await response.json();
+            } catch (error) {
+                console.error('載入 JSON 失敗:', error);
+            }
+        }
+
+        async function shareLine() {
+            if (!flexContent) {
+                await loadFlexContent();
+            }
+
             if (liff.isInClient()) {
                 liff.shareTargetPicker([
                     {
                         "type": "flex",
                         "altText": "謝謝您的分享│倇寧電子名片！",
-                        "contents": {
-                            // 這裡放入 WanNing.json 的內容
-                        }
+                        "contents": flexContent
                     }
                 ]);
             } else {
-                // 如果不在 LINE 中，提供分享連結
-                const shareUrl = "https://line.me/R/msg/text/?謝謝您的分享│倇寧電子名片！%0D%0Ahttps://your-domain.com/index.html?key=WanNing";
+                const shareUrl = "https://liff.line.me/2006307570-gVmJm6v1?key=WanNing";
                 window.open(shareUrl);
             }
         }
 
-        // 初始化 LIFF
         async function initializeLiff() {
             try {
-                await liff.init({ liffId: "您的LIFF_ID" });
+                await liff.init({ liffId: "2006307570-gVmJm6v1" });
+                await loadFlexContent();
             } catch (error) {
                 console.error('LIFF 初始化失敗:', error);
             }
