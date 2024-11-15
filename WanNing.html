@@ -42,16 +42,15 @@
             }
         }
 
-        async function initializeLiff() {
-            try {
-                await liff.init({ liffId: "2006307570-gVmJm6v1" });
-                await loadFlexContent();
-            } catch (error) {
-                console.error('LIFF 初始化失敗:', error);
-            }
-        }
+document.addEventListener('DOMContentLoaded', async function() {
+try {
+        await liff.init({ liffId: "2006307570-gVmJm6v1" });
+        await loadFlexContent();
+    } catch (error) {
+        console.error('LIFF 初始化失敗:', error);
+    }
+});
 
-        window.onload = initializeLiff;
     </script>
     <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </body>
