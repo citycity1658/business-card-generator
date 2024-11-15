@@ -27,30 +27,34 @@
             if (!flexContent) {
                 await loadFlexContent();
             }
-
-            if (liff.isInClient()) {
-                liff.shareTargetPicker([
-                    {
-                        "type": "flex",
-                        "altText": "謝謝您的分享│倇寧電子名片！",
-                        "contents": flexContent
-                    }
-                ]);
-            } else {
-                const shareUrl = "https://liff.line.me/2006307570-gVmJm6v1?key=WanNing";
-                window.open(shareUrl);
-            }
+            
+            liff.shareTargetPicker([{
+                "type": "flex",
+                "altText": "謝謝您的分享│倇寧電子名片！",
+                "contents": flexContent
+            }]).then(function() {
+                if (!window.liff.isInClient()) {
+                    window.sendAlertIfNotInClient();
+                } else {
+                    window.liff.closeWindow();
+                }
+            }).catch(function(error) {
+                if (error == 'TypeError: window.sendAlertIfNotInClient is not a function') {
+                    // 忽略這個特定錯誤
+                } else {
+                    alert('傳送失敗' + error);
+                }
+            });
         }
 
-document.addEventListener('DOMContentLoaded', async function() {
-try {
-        await liff.init({ liffId: "2006307570-gVmJm6v1" });
-        await loadFlexContent();
-    } catch (error) {
-        console.error('LIFF 初始化失敗:', error);
-    }
-});
-
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                await liff.init({ liffId: "2006307570-gVmJm6v1" });
+                await loadFlexContent();
+            } catch (error) {
+                console.error('LIFF 初始化失敗:', error);
+            }
+        });
     </script>
     <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </body>
