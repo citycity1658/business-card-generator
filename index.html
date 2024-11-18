@@ -23,7 +23,7 @@
                 const whitelist = await response.json();
 
                 // 檢查 key 是否在 whitelist 中
-                if (key + '.json' in whitelist) {
+                if (key in whitelist['names']) {
                     // 重定向到對應的頁面
                     window.location.href = `${key}.html`;
                 } else {

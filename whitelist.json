@@ -1,7 +1,6 @@
 {
-    "Yongqi.json": "BNI®桃園東A區 永齊分會│電子名片來囉！",
-    "217P1b5NJNcE153053.json": "張三│電子名片來囉！",
-    "234567890.json": "BNI®桃園東A區 永工分會│電子名片來囉！",
-    "another_key.json": "李四│電子名片來囉！",
-    "WanNing.json": "謝謝您的分享│倇寧電子名片！"
+    "names": [
+      "Yijia",
+      "WanNing"
+    ]
 }
