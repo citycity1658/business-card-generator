@@ -12,22 +12,189 @@
     </div>
 
     <script>
-        let flexContent = null;
-
-        async function loadFlexContent() {
-            try {
-                const response = await fetch('orig_messages/WanNing.json');
-                flexContent = await response.json();
-            } catch (error) {
-                console.error('載入 JSON 失敗:', error);
-            }
-        }
+        const flexContent = {
+            "type": "carousel",
+            "contents": [
+            {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/7qG42LC.png",
+        "gravity": "top",
+        "size": "full",
+        "aspectRatio": "2:3",
+        "aspectMode": "fit"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "了解更多➤",
+                      "uri": "https://bni.com.tw/zh-TW/index"
+                    },
+                    "style": "primary",
+                    "color": "#ff9a00",
+                    "height": "sm"
+                  }
+                ],
+                "borderColor": "#ffffff",
+                "borderWidth": "1px",
+                "cornerRadius": "4px",
+                "flex": 2,
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "http://linecorp.com/"
+                },
+                "height": "40px"
+              }
+            ],
+            "spacing": "4px"
+          }
+        ],
+        "paddingBottom": "10px",
+        "paddingStart": "10px",
+        "spacing": "md",
+        "paddingEnd": "10px"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/hrU9BbQ.png",
+        "gravity": "top",
+        "size": "full",
+        "aspectRatio": "2:3",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "了解更多➤",
+                      "uri": "https://bni.com.tw/zh-TW/index"
+                    },
+                    "style": "primary",
+                    "color": "#ff9a00",
+                    "height": "sm"
+                  }
+                ],
+                "borderColor": "#ffffff",
+                "borderWidth": "1px",
+                "cornerRadius": "4px",
+                "flex": 2,
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "http://linecorp.com/"
+                },
+                "height": "40px"
+              }
+            ],
+            "spacing": "4px"
+          }
+        ],
+        "spacing": "md",
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "10px",
+        "paddingEnd": "10px",
+        "paddingStart": "5px"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/CzEmZJb.png",
+        "gravity": "top",
+        "size": "full",
+        "aspectRatio": "2:3",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "了解更多➤",
+                  "uri": "http://linecorp.com/"
+                },
+                "color": "#ff9a00",
+                "height": "sm",
+                "style": "primary"
+              }
+            ],
+            "borderColor": "#ffffff",
+            "flex": 1,
+            "borderWidth": "1px",
+            "cornerRadius": "4px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "諮詢",
+                  "uri": "http://linecorp.com/"
+                },
+                "height": "sm",
+                "style": "primary",
+                "color": "#ff9a00",
+                "flex": 1
+              }
+            ],
+            "flex": 1,
+            "borderWidth": "1px",
+            "cornerRadius": "4px"
+          }
+        ],
+        "spacing": "4px"
+      }
+    }
+  ]
+}
+            ]
+        };
 
         async function shareLine() {
-            if (!flexContent) {
-                await loadFlexContent();
-            }
-            
             liff.shareTargetPicker([{
                 "type": "flex",
                 "altText": "謝謝您的分享│倇寧電子名片！",
@@ -50,7 +217,6 @@
         document.addEventListener('DOMContentLoaded', async function() {
             try {
                 await liff.init({ liffId: "2006307570-gVmJm6v1" });
-                await loadFlexContent();
             } catch (error) {
                 console.error('LIFF 初始化失敗:', error);
             }

@@ -1,0 +1,176 @@
+{
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "url": "https://healthy-life-taiwan.com/wp-content/uploads/2024/11/我是黃義家_桃園最具親和力的物理治療師.png",
+          "gravity": "top",
+          "size": "full",
+          "aspectRatio": "3:4",
+          "aspectMode": "fit"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "了解更多➤",
+                        "uri": "https://yijia.my.canva.site/"
+                      },
+                      "style": "primary",
+                      "color": "#ff9a00",
+                      "height": "sm"
+                    }
+                  ],
+                  "borderColor": "#ffffff",
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "flex": 2,
+                  "action": {
+                    "type": "uri",
+                    "label": "action",
+                    "uri": "http://linecorp.com/"
+                  },
+                  "height": "40px"
+                }
+              ],
+              "spacing": "4px"
+            }
+          ],
+          "paddingBottom": "10px",
+          "paddingStart": "10px",
+          "spacing": "md",
+          "paddingEnd": "10px"
+        }
+      },
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "gravity": "top",
+          "size": "full",
+          "aspectRatio": "3:4",
+          "aspectMode": "cover",
+          "url": "https://healthy-life-taiwan.com/wp-content/uploads/2024/11/當你的家人或朋友需要治療_你還在冷眼旁觀嗎.png"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "了解更多➤",
+                        "uri": "https://yijia.my.canva.site/"
+                      },
+                      "style": "primary",
+                      "color": "#ff9a00",
+                      "height": "sm"
+                    }
+                  ],
+                  "borderColor": "#ffffff",
+                  "borderWidth": "1px",
+                  "cornerRadius": "4px",
+                  "flex": 2,
+                  "action": {
+                    "type": "uri",
+                    "label": "action",
+                    "uri": "http://linecorp.com/"
+                  },
+                  "height": "40px"
+                }
+              ],
+              "spacing": "4px"
+            }
+          ],
+          "spacing": "md",
+          "backgroundColor": "#ffffff",
+          "paddingBottom": "10px",
+          "paddingEnd": "10px",
+          "paddingStart": "5px"
+        }
+      },
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "url": "https://healthy-life-taiwan.com/wp-content/uploads/2024/11/重返正常生活是多麼好的事情.png",
+          "gravity": "top",
+          "size": "full",
+          "aspectRatio": "3:4",
+          "aspectMode": "cover"
+        },
+        "body": {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "button",
+                  "action": {
+                    "type": "uri",
+                    "label": "點我看影片➤",
+                    "uri": "https://healthy-life-taiwan.com/wp-content/uploads/2024/11/712429381.153658.mp4"
+                  },
+                  "color": "#ff9a00",
+                  "height": "sm",
+                  "style": "primary"
+                }
+              ],
+              "borderColor": "#ffffff",
+              "flex": 1,
+              "borderWidth": "1px",
+              "cornerRadius": "4px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "button",
+                  "action": {
+                    "type": "uri",
+                    "label": "諮詢",
+                    "uri": "https://line.me/ti/p/9r9l_kyAcR"
+                  },
+                  "height": "sm",
+                  "style": "primary",
+                  "color": "#ff9a00",
+                  "flex": 1
+                }
+              ],
+              "flex": 1,
+              "borderWidth": "1px",
+              "cornerRadius": "4px"
+            }
+          ],
+          "spacing": "4px"
+        }
+      }
+    ]
+  }
