@@ -4,224 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>倇寧電子名片</title>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>倇寧電子名片</h1>
-        <button onclick="shareLine()">在 LINE 中分享</button>
+        <button id="shareButton" style="display: none;" onclick="shareLine()">在 LINE 中分享</button>
+        <button id="loginButton" style="display: none;" onclick="login()">登入 LINE</button>
     </div>
 
     <script>
-        const flexContent = {
-            "type": "carousel",
-            "contents": [
-            {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://i.imgur.com/7qG42LC.png",
-        "gravity": "top",
-        "size": "full",
-        "aspectRatio": "2:3",
-        "aspectMode": "fit"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "action": {
-                      "type": "uri",
-                      "label": "了解更多➤",
-                      "uri": "https://bni.com.tw/zh-TW/index"
-                    },
-                    "style": "primary",
-                    "color": "#ff9a00",
-                    "height": "sm"
-                  }
-                ],
-                "borderColor": "#ffffff",
-                "borderWidth": "1px",
-                "cornerRadius": "4px",
-                "flex": 2,
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "http://linecorp.com/"
-                },
-                "height": "40px"
-              }
-            ],
-            "spacing": "4px"
-          }
-        ],
-        "paddingBottom": "10px",
-        "paddingStart": "10px",
-        "spacing": "md",
-        "paddingEnd": "10px"
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://i.imgur.com/hrU9BbQ.png",
-        "gravity": "top",
-        "size": "full",
-        "aspectRatio": "2:3",
-        "aspectMode": "cover"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "action": {
-                      "type": "uri",
-                      "label": "了解更多➤",
-                      "uri": "https://bni.com.tw/zh-TW/index"
-                    },
-                    "style": "primary",
-                    "color": "#ff9a00",
-                    "height": "sm"
-                  }
-                ],
-                "borderColor": "#ffffff",
-                "borderWidth": "1px",
-                "cornerRadius": "4px",
-                "flex": 2,
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "http://linecorp.com/"
-                },
-                "height": "40px"
-              }
-            ],
-            "spacing": "4px"
-          }
-        ],
-        "spacing": "md",
-        "backgroundColor": "#ffffff",
-        "paddingBottom": "10px",
-        "paddingEnd": "10px",
-        "paddingStart": "5px"
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://i.imgur.com/CzEmZJb.png",
-        "gravity": "top",
-        "size": "full",
-        "aspectRatio": "2:3",
-        "aspectMode": "cover"
-      },
-      "body": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "button",
-                "action": {
-                  "type": "uri",
-                  "label": "了解更多➤",
-                  "uri": "http://linecorp.com/"
-                },
-                "color": "#ff9a00",
-                "height": "sm",
-                "style": "primary"
-              }
-            ],
-            "borderColor": "#ffffff",
-            "flex": 1,
-            "borderWidth": "1px",
-            "cornerRadius": "4px"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "button",
-                "action": {
-                  "type": "uri",
-                  "label": "諮詢",
-                  "uri": "http://linecorp.com/"
-                },
-                "height": "sm",
-                "style": "primary",
-                "color": "#ff9a00",
-                "flex": 1
-              }
-            ],
-            "flex": 1,
-            "borderWidth": "1px",
-            "cornerRadius": "4px"
-          }
-        ],
-        "spacing": "4px"
-      }
-    }
-  ]
-}
-            ]
-        };
-
-        async function shareLine() {
-            liff.shareTargetPicker([{
-                "type": "flex",
-                "altText": "謝謝您的分享│倇寧電子名片！",
-                "contents": flexContent
-            }]).then(function() {
-                if (!window.liff.isInClient()) {
-                    window.sendAlertIfNotInClient();
-                } else {
-                    window.liff.closeWindow();
-                }
-            }).catch(function(error) {
-                if (error == 'TypeError: window.sendAlertIfNotInClient is not a function') {
-                    // 忽略這個特定錯誤
-                } else {
-                    alert('傳送失敗' + error);
-                }
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', async function() {
+        async function initializeLiff() {
             try {
                 await liff.init({ liffId: "2006307570-gVmJm6v1" });
+                
+                // 檢查登入狀態
+                if (liff.isLoggedIn()) {
+                    document.getElementById('shareButton').style.display = 'block';
+                    document.getElementById('loginButton').style.display = 'none';
+                } else {
+                    document.getElementById('shareButton').style.display = 'none';
+                    document.getElementById('loginButton').style.display = 'block';
+                }
             } catch (error) {
                 console.error('LIFF 初始化失敗:', error);
+                alert('LIFF 初始化失敗: ' + error.message);
             }
-        });
+        }
+
+        async function login() {
+            try {
+                if (!liff.isLoggedIn()) {
+                    // 設定登入後的回調 URL
+                    const redirectUri = window.location.href;
+                    await liff.login({ redirectUri: redirectUri });
+                }
+            } catch (error) {
+                console.error('登入失敗:', error);
+                alert('登入失敗: ' + error.message);
+            }
+        }
+
+        async function getFlexContent() {
+            try {
+                const urlParams = new URLSearchParams(window.location.search);
+                const key = urlParams.get('key') || 'WanNing';
+                
+                const response = await fetch(`orig_messages/${key}.json`);
+                const data = await response.json();
+                return {
+                    "type": "flex",
+                    "altText": `謝謝您的分享│${key}電子名片！`,
+                    "contents": data
+                };
+            } catch (error) {
+                console.error('讀取 JSON 失敗:', error);
+                return null;
+            }
+        }
+
+        async function shareLine() {
+            if (!liff.isLoggedIn()) {
+                await login();
+                return;
+            }
+
+            const flexContent = await getFlexContent();
+            if (!flexContent) {
+                alert('無法讀取名片內容');
+                return;
+            }
+
+            try {
+                await liff.shareTargetPicker([flexContent]);
+                if (!liff.isInClient()) {
+                    alert('分享成功！');
+                } else {
+                    liff.closeWindow();
+                }
+            } catch (error) {
+                console.error('分享失敗:', error);
+                alert('分享失敗: ' + error.message);
+            }
+        }
+
+        // 頁面載入時初始化 LIFF
+        initializeLiff();
     </script>
-    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </body>
 </html> 

@@ -1,4 +1,55 @@
-{
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黃義家物理治療師│電子名片</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .share-button {
+            background-color: #ff9a00;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .profile-image {
+            max-width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://healthy-life-taiwan.com/wp-content/uploads/2024/11/我是黃義家_桃園最具親和力的物理治療師.png" 
+             alt="黃義家物理治療師" 
+             class="profile-image">
+        <h1>黃義家物理治療師</h1>
+        <p>桃園最具親和力的物理治療師</p>
+        <button onclick="shareLine()" class="share-button">分享電子名片</button>
+    </div>
+
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script>
+        const flexContent = {
+            "type": "carousel",
+            "contents": [
+            {
   "type": "carousel",
   "contents": [
     {
@@ -13,52 +64,25 @@
       },
       "body": {
         "type": "box",
-        "layout": "horizontal",
+        "layout": "vertical",
         "contents": [
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
                 "type": "box",
-                "layout": "horizontal",
+                "layout": "vertical",
                 "contents": [
                   {
                     "type": "button",
                     "action": {
                       "type": "uri",
-                      "label": "了解更多",
+                      "label": "了解更多➤",
                       "uri": "https://yijia.my.canva.site/"
                     },
                     "style": "primary",
-                    "color": "#4bcd36",
-                    "height": "sm"
-                  }
-                ],
-                "borderColor": "#ffffff",
-                "borderWidth": "1px",
-                "cornerRadius": "4px",
-                "flex": 2,
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "http://linecorp.com/"
-                },
-                "height": "40px"
-              },
-              {
-                "type": "box",
-                "layout": "horizontal",
-                "contents": [
-                  {
-                    "type": "button",
-                    "action": {
-                      "type": "uri",
-                      "label": "加Line諮詢➤",
-                      "uri": "https://line.me/ti/p/9r9l_kyAcR"
-                    },
-                    "style": "primary",
-                    "color": "#4bcd36",
+                    "color": "#ff9a00",
                     "height": "sm"
                   }
                 ],
@@ -99,7 +123,7 @@
         "contents": [
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
                 "type": "box",
@@ -113,34 +137,7 @@
                       "uri": "https://yijia.my.canva.site/"
                     },
                     "style": "primary",
-                    "color": "#4bcd36",
-                    "height": "sm"
-                  }
-                ],
-                "borderColor": "#ffffff",
-                "borderWidth": "1px",
-                "cornerRadius": "4px",
-                "flex": 2,
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "http://linecorp.com/"
-                },
-                "height": "40px"
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "button",
-                    "action": {
-                      "type": "uri",
-                      "label": "加Line諮詢➤",
-                      "uri": "https://line.me/ti/p/9r9l_kyAcR"
-                    },
-                    "style": "primary",
-                    "color": "#4bcd36",
+                    "color": "#ff9a00",
                     "height": "sm"
                   }
                 ],
@@ -178,7 +175,7 @@
       },
       "body": {
         "type": "box",
-        "layout": "vertical",
+        "layout": "horizontal",
         "contents": [
           {
             "type": "box",
@@ -191,7 +188,7 @@
                   "label": "點我看影片➤",
                   "uri": "https://healthy-life-taiwan.com/wp-content/uploads/2024/11/712429381.153658.mp4"
                 },
-                "color": "#4bcd36",
+                "color": "#ff9a00",
                 "height": "sm",
                 "style": "primary"
               }
@@ -209,12 +206,12 @@
                 "type": "button",
                 "action": {
                   "type": "uri",
-                  "label": "加Line諮詢➤",
+                  "label": "諮詢",
                   "uri": "https://line.me/ti/p/9r9l_kyAcR"
                 },
                 "height": "sm",
                 "style": "primary",
-                "color": "#4bcd36",
+                "color": "#ff9a00",
                 "flex": 1
               }
             ],
@@ -228,3 +225,35 @@
     }
   ]
 }
+            ]
+        };
+
+        async function initializeLiff() {
+            try {
+                await liff.init({ liffId: "2006307570-gVmJm6v1" });
+            } catch (error) {
+                console.error('LIFF 初始化失敗:', error);
+            }
+        }
+
+        async function shareLine() {
+            if (liff.isInClient()) {
+                try {
+                    await liff.shareTargetPicker([{
+                        "type": "flex",
+                        "altText": "黃義家物理治療師│電子名片",
+                        "contents": flexContent
+                    }]);
+                } catch (error) {
+                    console.error('分享失敗:', error);
+                }
+            } else {
+                const shareUrl = "https://liff.line.me/2006307570-gVmJm6v1?key=Yijia";
+                window.open(shareUrl);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeLiff);
+    </script>
+</body>
+</html> 

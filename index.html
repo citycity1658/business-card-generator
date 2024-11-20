@@ -10,31 +10,31 @@
     <script>
         async function checkAndRedirect() {
             try {
-                // 獲取 URL 參數
                 const urlParams = new URLSearchParams(window.location.search);
                 const key = urlParams.get('key');
                 
                 if (!key) {
-                    throw new Error('未提供 key 參數');
+                    throw new Error('請提供正確的分享連結');
                 }
 
-                // 讀取 whitelist.json
-                const response = await fetch('whitelist.json');
-                const whitelist = await response.json();
+                const whitelist = {
+                    "names": [
+                        "Yijia",
+                        "WanNing"
+                    ]
+                };
 
-                // 檢查 key 是否在 whitelist 中
-                if (key in whitelist['names']) {
-                    // 重定向到對應的頁面
+                if (whitelist.names.includes(key)) {
                     window.location.href = `${key}.html`;
                 } else {
-                    throw new Error('無效的 key');
+                    throw new Error('無效的分享連結');
                 }
             } catch (error) {
                 document.getElementById('loading').textContent = '錯誤：' + error.message;
+                console.error('檢查失敗:', error);
             }
         }
 
-        // 頁面加載時執行檢查
         window.onload = checkAndRedirect;
     </script>
 </body>
